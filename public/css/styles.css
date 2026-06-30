@@ -1,139 +1,48 @@
 html{
     background: #020213;
+    margin-left: 60px;
 }
 .purple{
     color: blueviolet;
-    margin-top: 16px;
 }
-button{
+h1{
+    color: white;
+    font-size:55px;
+    margin-bottom:6px;  
+    font-family: 'poppins',sans-serif;
+}
+.btn{
     background-color: blueviolet;
-    border-radius: 60px;
+    border-radius: 15px;
     border-width: 0px;
     padding: 15px;
     font-family: 'inter',sans-serif;
     font-size: 16px;
     font-weight: 400;
+    margin-left: 0px;
     margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    width: 622px;
+    color: white;
+}
+input{
+    display: block;
+    margin: 15px;
+    margin-left: 0px;
+    font-size: 25px;
+    width: 600px;
+    border-radius: 12px;
+    padding: 8px;
+    background: #575256d3;
+    color: white;
     
-}
-.headline h1{
-    font-size:55px;
-    margin-bottom:6px;  
-    font-family: 'poppins',sans-serif;
-}
-.bg{
-    margin-left: 10px;
-}
-div{
-    margin-left:60px;   
 }
 p{
     font-family: 'inter',sans-serif;
     font-size: 16px;
     font-weight: 400;
-}
-.icons{
-    font-size: 13px;
-    display: flex;
-    gap: 40px;
-}
-.logo{
-    font-size: 35px;
-    margin-right: 60px; 
-    margin-top: 8px;  
-    margin-bottom: 16px;
-}
-h1,h2,button{
-    color: white;
-}
-p{
     color: whitesmoke;
 }
-.card button{
-    background: #020213;
-    border-color:rgb(52, 0, 92) ;
-    border-style: solid;
-    border-width: 1.5px;
-    padding: 10px;
-    font-family: 'inter',sans-serif;
-    font-size: 9px;
-    font-weight: 400;  
-    margin-top: 35px;  
-    text-align: left;
-    width:260px;
-    margin-right:28px;
-}
-.hero{
-    display: flex;
-    gap: 20px;
-}
-.hero img{
-    width: 500px;
-    border-radius: 160px;
-}
-.headline{
-    margin-left: 0px;
-}
-#login, #sign {
-    background-color: #080d1f;
-    border-style: solid;
-    border-color:rgb(52, 0, 92) ;
-    border-width: 1.5px;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-family: 'inter',sans-serif;
-    font-size: 15px;
-    text-align: justify;
-    margin-right: 10px;
-    margin-top: 2.2px;
-    vertical-align: middle; 
 
-}
-#sign{
-    background-color: blueviolet;
-}
-.page{
-    padding-left: 0px;  
-}
-.card img{
-    width: 80px;
-    height: 80px;
-    align-self: center;
-    border-radius: 500px;
-}
-.card button{
-  display: flex; 
-}
-.card div{
-    margin-left:8px;
-    font-family: 'inter',sans-serif;
-}
-button p{
-    font-size: 13px;
-    font-weight: 400;
-    word-spacing: 4px;
-    letter-spacing: 1px;
-}
-.card{
-    display: flex;
-}
-.icons img{
-    margin-top: 10px;
-    width: 45px;
-    height: 40px;
-    border-radius: 300px;
-}
-.top{
-    margin-left: 0px;
-    display: flex;
-    gap: 7px;
-    margin-right: 10px;
-}
-.headline img{
-    width: 30px;
-    margin-left: 3px;
-}
-#start{
-    margin-right: 20px;
-}
 
