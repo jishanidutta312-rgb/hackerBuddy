@@ -44,5 +44,32 @@ p{
     font-weight: 400;
     color: whitesmoke;
 }
-
+.container{
+    display: flex;
+    gap: 0px;
+}
+.sign{
+    width: 550px;
+}
+.google,.git{
+    width:20px ;
+    height:20px;
+    border-radius: 50px;
+    margin-top:5px;
+    margin-bottom: 10px;
+}
+.gbtn button{
+    display: flex-inline;
+    justify-content: center;
+    text-align: center;
+    background: transparent;
+    border-style: solid;
+    color: white;
+    width: 200px;
+    border-width: 2px;
+    border-radius: 12px;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    border-color: blue;
+}
 
