@@ -1,6 +1,10 @@
 html{
     background: #020213;
-    margin-left: 50px;
+    margin-left: 40px;
+    
+}
+body{
+    margin: 0px;
 }
 .purple{
     color: blueviolet;
@@ -9,7 +13,7 @@ h1{
     color: white;
     font-size:55px;  
     font-family: 'poppins',sans-serif;
-    margin-top: 8px;
+    margin-top: 30px;
 }
 .btn{
     background-color: blueviolet;
@@ -50,10 +54,10 @@ p{
 }
 .container{
     display: flex;
-    gap: 0px;
+    height: 100vh;
 }
 .sign{
-    width: 550px;
+    width: 580px;
 }
 .google,.git{
     width:30px ;
@@ -101,5 +105,50 @@ hr{
 span{
     margin-left: 10px;
 }
+.welcome{
+    margin-top: 47px;
+    margin-bottom: 17px;
+}
+.log{
+    font-size: 35px;
+    font-family: 'inter',sans-serif;
+    text-align: start;
+    margin-bottom: 40px;
+}
+.pass{
+    display: flex;
+}
+.forgot{
+    font-size: 16px;
+    font-weight: 400;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    padding: 12px;
+    margin-left: 0;
+    margin-bottom: 17px;
+    margin-top: 19px;
+    text-align: center;
+    background: transparent;
+    border-style: solid;
+    color: white;
+    width: 200px;
+    border-width: 0.1px;
+    border-radius: 12px;
+    border-color: blue;
 
+}
+.pass input{
+    width:380px ;
+}
+.logpg{
+    background-image:url('../images/login.jpeg');
+    background-size: cover;
+}
+.form{
+    gap: 20px;
+    background-color: #020213;
+    width:640px; 
+    height: 100vh;
+    margin-left: 20px;
+}
 
