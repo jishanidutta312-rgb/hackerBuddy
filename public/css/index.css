@@ -5,7 +5,7 @@ html{
     color: blueviolet;
     margin-top: 16px;
 }
-button{
+button{ 
     background-color: blueviolet;
     border-radius: 60px;
     border-width: 0px;
@@ -14,7 +14,6 @@ button{
     font-size: 16px;
     font-weight: 400;
     margin-top: 20px;
-    
 }
 .headline h1{
     font-size:55px;
@@ -35,7 +34,7 @@ p{
 .icons{
     font-size: 13px;
     display: flex;
-    gap: 40px;
+    gap: 30px;
 }
 .logo{
     font-size: 35px;
@@ -127,7 +126,7 @@ button p{
     margin-left: 0px;
     display: flex;
     gap: 7px;
-    margin-right: 10px;
+   
 }
 .headline img{
     width: 30px;
@@ -135,5 +134,9 @@ button p{
 }
 #start{
     margin-right: 20px;
+}
+.pressed{
+    opacity: 0.5;
+    transform: scale(o.95);
 }
 

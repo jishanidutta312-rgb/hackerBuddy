@@ -1,4 +1,4 @@
-$('button,.icons h2').click(function(){
+$('button,span').click(function(){
     var curr=this;
     $(this).addClass('pressed')
     setTimeout(function(){

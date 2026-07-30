@@ -151,4 +151,7 @@ span{
     height: 100vh;
     margin-left: 20px;
 }
-
+.pressed{
+    opacity: 0.5;
+    transform: scale(o.95);
+}
