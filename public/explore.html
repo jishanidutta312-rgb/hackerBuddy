@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/explore.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="icons">
+    <div class="top">
+        <img src="./images/logo.png" alt="logo"/>
+        <h1 class="logo">hackerBuddy</h2>
+    </div>
+    <a href="/"><h2>home</h2></a>
+    <h2 id="purple">Explore</h2>
+    <a href="/hackathons"><h2>Hackathons</h2></a>
+    <a href="/#how-it-works"><h2>How it works</h2></a>
+    <a href="/about"><h2>about</h2></a>
+    <div class="page">
+        <form action="/login" method="get">
+            <button type="submit" id="login">Login</button>
+        </form>
+        <form action="/signup" method="get">
+            <button id="sign">Sign Up</button>
+        </form>
+    </div>
+</div>
+<!-- Your Navbar ends here -->
+
+<main class="explore-page">
+  <div class="discovery-header">
+    <p class="hub-label">DISCOVERY HUB</p>
+    <h1>Find Developers & Teams</h1>
+    <p class="desc">Filter candidates and active teams by skills, roles, and college.</p>
+    <div class="search-box">
+      <input type="text" placeholder="Search by skills, role, or college (e.g., KIIT, React, AI)..." />
+    </div>
+  </div>
+
+  <section id="developers" class="section-container">
+    <h2>👨‍💻 Find Developers</h2>
+    <div class="card-grid">
+      <!-- Card 1 -->
+      <div class="card-box">
+        <div class="card-head">
+          <span class="badge green">Available</span>
+          <span class="college">KIIT University</span>
+        </div>
+        <h3>Aarav Sharma</h3>
+        <p class="role">Full Stack Developer</p>
+        <p class="info">Skills: Node.js, React, MongoDB, Go</p>
+        <button class="action-btn">Invite to Team</button>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="card-box">
+        <div class="card-head">
+          <span class="badge green">Available</span>
+          <span class="college">IIT Kharagpur</span>
+        </div>
+        <h3>Priya Verma</h3>
+        <p class="role">AI / ML Engineer</p>
+        <p class="info">Skills: Python, PyTorch, LangChain, FastAPI</p>
+        <button class="action-btn">Invite to Team</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="teams" class="section-container">
+    <h2>🚀 Teams Looking for Members</h2>
+    <div class="card-grid">
+      <!-- Team Card 1 -->
+      <div class="card-box">
+        <div class="card-head">
+          <span class="badge purple-bg">3/4 Members</span>
+          <span class="college">KIIT University</span>
+        </div>
+        <h3>NeuroTrace</h3>
+        <p class="role">Seeking: Frontend Designer</p>
+        <p class="info">Project: AI Attention & Focus Tracker</p>
+        <button class="action-btn">Join Team</button>
+      </div>
+
+      <!-- Team Card 2 -->
+      <div class="card-box">
+        <div class="card-head">
+          <span class="badge purple-bg">2/4 Members</span>
+          <span class="college">BITS Pilani</span>
+        </div>
+        <h3>ChainVote</h3>
+        <p class="role">Seeking: Smart Contract Dev</p>
+        <p class="info">Project: Decentralized Zero-Knowledge Voting</p>
+        <button class="action-btn">Join Team</button>
+      </div>
+    </div>
+  </section>
+</main>
+ 

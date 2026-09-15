@@ -1,0 +1,136 @@
+/* Fixed: added the leading dot */
+.about-section {
+  width: 100%;
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 24px 80px 24px;
+  box-sizing: border-box;
+  margin: 0 auto !important;
+}
+
+.about-section div {
+  margin-left: 0 !important;
+}
+
+.about-header {
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 900px;
+}
+
+/* Fixed: reduced from 80px to 13px */
+.sub-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: blueviolet;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.about-header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(28px, 3.5vw, 42px);
+  color: #ffffff;
+  margin: 6px 0 14px 0;
+  line-height: 1.2;
+}
+
+.about-desc {
+  max-width: 750px;
+  margin: 0 auto;
+  font-size: clamp(14px, 1.2vw, 16px);
+  line-height: 1.6;
+  color: #a0a0b8;
+}
+
+/* 3 Cards Container */
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+  max-width: 1150px;
+  margin-bottom: 50px;
+}
+
+.about-card {
+  background: #080d1f;
+  border: 1.5px solid rgb(52, 0, 92);
+  border-radius: 18px;
+  padding: 28px 24px;
+  box-sizing: border-box;
+  text-align: left;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: blueviolet;
+}
+
+.about-card-icon {
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.about-card h3 {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+
+.about-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #b5b5c7;
+  margin: 0;
+}
+
+/* --- Added: Stats / Values Section --- */
+.values-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1150px;
+  background: #080d1f;
+  border: 1.5px solid rgb(52, 0, 92);
+  border-radius: 18px;
+  padding: 36px 20px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.value-item h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 36px;
+  color: blueviolet;
+  margin: 0 0 6px 0;
+}
+
+.value-item p {
+  font-size: 14px;
+  color: #a0a0b8;
+  margin: 0;
+}
+
+/* Responsive Breakpoint */
+@media (max-width: 900px) {
+  .about-section {
+    min-height: auto;
+    padding: 40px 20px;
+  }
+  .about-grid,
+  .values-section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+

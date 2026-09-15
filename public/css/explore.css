@@ -1,0 +1,170 @@
+/* Scoped exclusively to .explore-page content below the navbar */
+
+.explore-page {
+  max-width: 1200px;
+  margin: 50px auto 100px auto;
+  padding: 0 24px;
+  box-sizing: border-box;
+}
+
+/* Neutralize global div margins inside explore content */
+.explore-page div {
+  margin-left: 0;
+}
+
+.explore-page .discovery-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.explore-page .sub-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  color: blueviolet;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.explore-page .discovery-header h1 {
+  font-family: 'poppins', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin: 10px 0 12px 0;
+}
+
+.explore-page .desc {
+  color: #a0a0b8;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.explore-page .search-box {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.explore-page .search-box input {
+  width: 100%;
+  padding: 14px 22px;
+  border-radius: 12px;
+  border: 1.5px solid rgb(52, 0, 92);
+  background: #080d1f;
+  color: white;
+  font-size: 15px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.explore-page .search-box input:focus {
+  border-color: blueviolet;
+}
+
+.explore-page .section-container {
+  margin-top: 60px;
+  scroll-margin-top: 100px;
+}
+
+.explore-page .section-container h2 {
+  font-family: 'poppins', sans-serif;
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.explore-page .card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.explore-page .card-box {
+  background: #080d1f;
+  border: 1.5px solid rgb(52, 0, 92);
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.explore-page .card-box:hover {
+  transform: translateY(-4px);
+  border-color: blueviolet;
+}
+
+.explore-page .card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.explore-page .badge {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 20px;
+}
+
+.explore-page .badge.green {
+  background: rgba(46, 204, 113, 0.15);
+  color: #2ecc71;
+}
+
+.explore-page .badge.purple-bg {
+  background: rgba(138, 43, 226, 0.2);
+  color: #c084fc;
+}
+
+.explore-page .college {
+  font-size: 12px;
+  color: #8c8ca1;
+}
+
+.explore-page .card-box h3 {
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  color: white;
+  margin-bottom: 4px;
+}
+
+.explore-page .role {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.explore-page .info {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #b5b5c7;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.explore-page .action-btn {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 10px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: auto;
+}
+.explore-page .hub-label {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: blueviolet !important;
+  text-transform: uppercase;
+  margin: 0 0 8px 0 !important;
+}

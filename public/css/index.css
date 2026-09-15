@@ -137,6 +137,110 @@ button p{
 }
 .pressed{
     opacity: 0.5;
-    transform: scale(o.95);
+    transform: scale(0.95);
+}
+form{
+    display:inline-block;
 }
 
+/* --- How It Works Section --- */
+
+.how-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 90px auto !important;
+  padding: 0 24px;
+  box-sizing: border-box;
+  scroll-margin-top: 90px;
+}
+
+.how-section div {
+  margin-left: 0;
+}
+
+.how-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.how-header h2 {
+  font-family: 'poppins', sans-serif;
+  font-size: 38px;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.how-desc {
+  max-width: 650px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #a0a0b8;
+  line-height: 1.6;
+}
+
+.how-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.how-card {
+  background: #080d1f;
+  border: 1.5px solid rgb(52, 0, 92);
+  border-radius: 18px;
+  padding: 30px 22px;
+  box-sizing: border-box;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.how-card:hover {
+  transform: translateY(-4px);
+  border-color: blueviolet;
+}
+
+.step-num {
+  font-family: 'poppins', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: blueviolet;
+  margin-bottom: 12px;
+  opacity: 0.85;
+}
+
+.how-card h3 {
+  font-family: 'poppins', sans-serif;
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.how-card p {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: #b5b5c7;
+  margin: 0;
+}
+
+/* Tablet & Mobile Layout */
+@media (max-width: 992px) {
+  .how-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .how-grid {
+    grid-template-columns: 1fr;
+  }
+}
+#purple {
+  color: blueviolet;
+}
+a {
+  text-decoration: none;
+}

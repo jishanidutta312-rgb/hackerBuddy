@@ -1,22 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="logpg">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login page</title>
-    <link rel="stylesheet" href="../public/css/styles.css"/>
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <div class="container">
         <div class="form">
-            <h1 class="welcome">Welcome back!👋</h1> 
-            <p class="log">Login to continue</p>
+            <h1>Create your 🚀<br/>hackerBuddy account.</h1> 
+            <input type="name" placeholder="Full Name"/>
             <input type="email" pattern=".+@example\.com"  placeholder="Email"/>
-            <div class="pass">
-                <input type="password" placeholder="Password"/>
-                <button class="forgot">Forgot password?</button>
-            </div>
-            <button class="btn">Login</button>
+            <input type="password" placeholder="Password"/>
+            <button class="btn">Sign Up</button>
             <div class="para">
                 <hr/>
                 <p>or continue with</p>
@@ -24,17 +21,20 @@
             </div>
             <div class="gbtn">
                 <button >
-                    <img class="google" src="../public/images/google.jpeg"/>
+                    <img class="google" src="./images/google.jpeg"/>
                     Google    
                 </button>
                 <button>
-                    <img class="git" src="../public/images/gitHub.jpeg"/>
+                    <img class="git" src="./images/gitHub.jpeg"/>
                     GitHub
                 </button>
             </div>
-        </div>  
+            <p>Already have an acount? <a href="/login" class="purple">login</a></p>
+
+        </div>
+        <img class="sign" src="./images/signUp.jpeg"/>
     </div>
 <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
-<script src="../js/index.js"> charset="UTF-8" </script>
+<script src="./js/signup.js"> charset="UTF-8" </script>
 </body>
 </html>

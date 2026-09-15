@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explore - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/hackathon.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+<div class="icons">
+    <div class="top">
+        <img src="./images/logo.png" alt="logo"/>
+        <h1 class="logo">hackerBuddy</h2>
+    </div>
+    <a href="/"><h2>home</h2></a>
+    <a href="/explore"><h2>Explore</h2></a>
+    <h2 id="purple" >Hackathons</h2>
+    <a href="/#how-it-works"><h2>How it works</h2></a>
+    <a href="/about"><h2>about</h2></a>
+    <div class="page">
+        <form action="/login" method="get">
+            <button type="submit" id="login">Login</button>
+        </form>
+        <form action="/signup" method="get">
+            <button id="sign">Sign Up</button>
+        </form>
+    </div>
+</div>
+<main class="hackathons-page">
+  <div class="hackathon-header">
+    <p class="section-badge">FEATURED EVENTS</p>
+    <h1>Upcoming Hackathons</h1>
+    <p class="desc">Discover active competitions, assemble your squad, and register before deadlines.</p>
+    
+    <div class="filter-row">
+      <button class="filter-pill active">All Events</button>
+      <button class="filter-pill">Hybrid / In-Person</button>
+      <button class="filter-pill">Online / Remote</button>
+      <button class="filter-pill">Beginner Friendly</button>
+    </div>
+  </div>
+
+  <div class="hackathon-grid">
+    <!-- Event 1 -->
+    <div class="event-card">
+      <div class="event-top">
+        <span class="status-badge live">Live Now</span>
+        <span class="event-location">📍 Hybrid • Bhubaneswar</span>
+      </div>
+      <h2>HackOdisha 2026</h2>
+      <p class="event-dates">🗓️ Oct 12 – 14, 2026</p>
+      <p class="event-details">
+        36-hour sprint focusing on Web3 protocols, AI-driven healthcare tooling, and open developer infrastructure.
+      </p>
+      <div class="event-tags">
+        <span>AI / ML</span>
+        <span>Web3</span>
+        <span>Healthcare</span>
+      </div>
+      <div class="event-footer">
+        <div class="prize-info">
+          <span class="prize-label">Total Prizes</span>
+          <strong>₹2,50,000</strong>
+        </div>
+        <a href="/explore#teams"><button class="event-btn">Find Team</button></a>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="event-card">
+      <div class="event-top">
+        <span class="status-badge upcoming">Upcoming</span>
+        <span class="event-location">📍 In-Person • Bengaluru</span>
+      </div>
+      <h2>EthIndia 2026</h2>
+      <p class="event-dates">🗓️ Nov 05 – 07, 2026</p>
+      <p class="event-details">
+        Asia’s largest Ethereum hackathon. Build next-generation decentralized applications, zero-knowledge proofs, and rollups.
+      </p>
+      <div class="event-tags">
+        <span>Solidity</span>
+        <span>ZK-Rollups</span>
+        <span>DeFi</span>
+      </div>
+      <div class="event-footer">
+        <div class="prize-info">
+          <span class="prize-label">Total Prizes</span>
+          <strong>$50,000 USD</strong>
+        </div>
+        <a href="/explore#teams"><button class="event-btn">Find Team</button></a>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="event-card">
+      <div class="event-top">
+        <span class="status-badge upcoming">Upcoming</span>
+        <span class="event-location">📍 Online • Global</span>
+      </div>
+      <h2>Global AI Sprint</h2>
+      <p class="event-dates">🗓️ Dec 01 – 03, 2026</p>
+      <p class="event-details">
+        Collaborate remotely across time zones to ship multimodal agent workflows, LLM applications, and developer tools.
+      </p>
+      <div class="event-tags">
+        <span>Agents</span>
+        <span>FastAPI</span>
+        <span>PyTorch</span>
+      </div>
+      <div class="event-footer">
+        <div class="prize-info">
+          <span class="prize-label">Total Prizes</span>
+          <strong>$25,000 USD</strong>
+        </div>
+        <a href="/explore#teams"><button class="event-btn">Find Team</button></a>
+      </div>
+    </div>
+  </div>
+</main>

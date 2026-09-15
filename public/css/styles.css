@@ -8,6 +8,7 @@ body{
 }
 .purple{
     color: blueviolet;
+    text-decoration: none;
 }
 h1{
     color: white;
