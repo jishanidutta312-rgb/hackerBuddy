@@ -1,0 +1,153 @@
+.how-page {
+  max-width: 1200px;
+  margin: 40px auto 100px auto;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+.how-page div,
+.how-page section {
+  margin-left: 0 !important;
+}
+
+.how-page .how-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.how-page .section-badge {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  color: blueviolet !important;
+  text-transform: uppercase;
+  margin: 0 0 8px 0 !important;
+}
+
+.how-page .how-header h1 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 40px !important;
+  color: #ffffff !important;
+  margin: 0 0 12px 0 !important;
+}
+
+.how-page .desc {
+  color: #a0a0b8 !important;
+  font-size: 16px !important;
+  max-width: 650px;
+  margin: 0 auto !important;
+  line-height: 1.6;
+}
+
+
+.how-page .how-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 24px !important;
+  width: 100% !important;
+  margin-bottom: 50px;
+}
+
+.how-page .how-card {
+  background: #080d1f !important;
+  border: 1.5px solid rgb(52, 0, 92) !important;
+  border-radius: 18px !important;
+  padding: 30px 24px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  box-sizing: border-box !important;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.how-page .how-card:hover {
+  transform: translateY(-4px);
+  border-color: blueviolet !important;
+}
+
+.how-page .step-num {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 32px !important;
+  font-weight: 700 !important;
+  color: blueviolet !important;
+  margin-bottom: 12px !important;
+  opacity: 0.9;
+}
+
+.how-page .how-card h3 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 19px !important;
+  color: #ffffff !important;
+  margin: 0 0 10px 0 !important;
+}
+
+.how-page .how-card p {
+  font-size: 13.5px !important;
+  line-height: 1.6 !important;
+  color: #b5b5c7 !important;
+  margin: 0 0 20px 0 !important;
+  flex-grow: 1 !important;
+}
+
+.how-page .card-tag {
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  background: rgba(138, 43, 226, 0.15);
+  color: #c084fc;
+}
+
+.how-page .how-banner {
+  background: #080d1f !important;
+  border: 1.5px solid rgb(52, 0, 92) !important;
+  border-radius: 18px !important;
+  padding: 36px 40px !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-sizing: border-box !important;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.how-page .banner-text h2 {
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 24px !important;
+  color: #ffffff !important;
+  margin: 0 0 6px 0 !important;
+}
+
+.how-page .banner-text p {
+  font-size: 14px !important;
+  color: #a0a0b8 !important;
+  margin: 0 !important;
+}
+
+.how-page .explore-redirect-btn {
+  background-color: blueviolet !important;
+  border: none !important;
+  border-radius: 12px !important;
+  padding: 12px 24px !important;
+  color: #ffffff !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  cursor: pointer !important;
+  margin-top: 0 !important;
+  transition: opacity 0.2s ease;
+}
+
+.how-page .explore-redirect-btn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .how-page .how-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+}

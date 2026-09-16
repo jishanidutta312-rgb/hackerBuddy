@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/index.css" />
+  <link rel="stylesheet" href="./css/dashBoard.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="dashboard-body">
+  <header class="auth-topbar">
+    <div class="topbar-left">
+      <button class="menu-toggle-btn" id="sidebar-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/dashboard" class="brand-link">
+        <h1><span class="purple">hacker</span>Buddy</h1>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <div class="topbar-avatar" id="topbar-avatar-btn">
+        <img id="nav-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <span class="online-indicator"></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Side Pull Drawer -->
+  <aside class="side-drawer" id="side-drawer">
+    <div class="drawer-header">
+      <div class="drawer-user">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" id="drawer-avatar" alt="Avatar" />
+        <div>
+          <h4 id="drawer-user-name">Aarav Sharma</h4>
+          <p>@aarav_dev</p>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/dashboard" class="drawer-link active">
+        <span class="drawer-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="/explore#teams" class="drawer-link">
+        <span class="drawer-icon">🔍</span>
+        <span>Explore Teams</span>
+      </a>
+      <a href="/teams" class="drawer-link">
+        <span class="drawer-icon">👥</span>
+        <span>My Teams</span>
+      </a>
+      <a href="/messages" class="drawer-link">
+        <span class="drawer-icon">💬</span>
+        <span>Messages</span>
+        <span class="badge-count">2</span>
+      </a>
+      <a href="/hackathons" class="drawer-link">
+        <span class="drawer-icon">🏆</span>
+        <span>Hackathons</span>
+      </a>
+      <a href="/saved" class="drawer-link">
+        <span class="drawer-icon">🔖</span>
+        <span>Saved</span>
+      </a>
+      <a href="#profile" class="drawer-link" id="drawer-profile-link">
+        <span class="drawer-icon">👤</span>
+        <span>Profile</span>
+      </a>
+      <a href="/settings" class="drawer-link">
+        <span class="drawer-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="/" class="logout-link">
+        <span class="drawer-icon">🚪</span>
+        <span>Log Out</span>
+      </a>
+    </div>
+  </aside>
+
+ 
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+ 
+ <main class="dashboard-page" id="dashboard-content">
+  
+  <section class="profile-hero-card" id="profile">
+    <div class="profile-left">
+      <div class="avatar-container">
+        <img id="profile-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <label for="avatar-input" class="avatar-edit-badge" title="Change Avatar">📷</label>
+        <input type="file" id="avatar-input" accept="image/*" style="display: none;" />
+      </div>
+
+      <div class="user-meta">
+        <div class="meta-header-row">
+          <h1 id="display-name">Aarav Sharma</h1>
+          <span class="status-pill available">Available for Teams</span>
+        </div>
+        <p class="role-college" id="display-role-college">Full Stack Developer • KIIT University</p>
+        <p class="bio-text" id="display-bio">Building scalable web applications and experimenting with AI agents. Ready to win hackathons.</p>
+        <div class="tags-row" id="display-skills">
+          <span class="skill-tag">Node.js</span>
+          <span class="skill-tag">React</span>
+          <span class="skill-tag">MongoDB</span>
+          <span class="skill-tag">Go</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-actions">
+      <button class="edit-profile-btn" id="open-modal-btn">Edit Profile</button>
+    </div>
+  </section>
+
+
+  <section class="dashboard-stats-grid">
+    <div class="stat-card">
+      <span class="stat-label">HACKATHONS WON</span>
+      <div class="stat-value-wrap">
+        <h2>3</h2>
+        <span class="stat-sub">5 Participated</span>
+      </div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">INVITES RECEIVED</span>
+      <div class="stat-value-wrap">
+        <h2>4</h2>
+        <span class="stat-sub">2 Pending</span>
+      </div>
+    </div>
+    <div class="stat-card">
+      <span class="stat-label">ACTIVE SQUAD</span>
+      <div class="stat-value-wrap">
+        <h2 class="team-name">NeuroTrace</h2>
+        <span class="stat-sub">Full Stack Lead</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="dashboard-sections-grid">
+ 
+    <div class="content-panel">
+      <div class="panel-header">
+        <h2>Pending Team Invites</h2>
+        <span class="panel-badge">2 New</span>
+      </div>
+      <div class="panel-list">
+        <div class="panel-item">
+          <div class="item-info">
+            <h3>Team ChainVote</h3>
+            <p>HackOdisha 2026 • Seeking Smart Contract Dev</p>
+          </div>
+          <div class="item-actions">
+            <button class="btn-accept">Accept</button>
+            <button class="btn-decline">Decline</button>
+          </div>
+        </div>
+
+        <div class="panel-item">
+          <div class="item-info">
+            <h3>Team MindMesh</h3>
+            <p>EthIndia 2026 • Seeking Backend Architect</p>
+          </div>
+          <div class="item-actions">
+            <button class="btn-accept">Accept</button>
+            <button class="btn-decline">Decline</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <div class="content-panel">
+      <div class="panel-header">
+        <h2>Registered Hackathons</h2>
+        <span class="panel-badge">2 Active</span>
+      </div>
+      <div class="panel-list">
+        <div class="panel-item">
+          <div class="item-info">
+            <h3>HackOdisha 2026</h3>
+            <p>Oct 12 – 14, 2026 • Hybrid</p>
+          </div>
+          <span class="status-pill in-progress">In Progress</span>
+        </div>
+
+        <div class="panel-item">
+          <div class="item-info">
+            <h3>Global AI Sprint</h3>
+            <p>Dec 01 – 03, 2026 • Online</p>
+          </div>
+          <span class="status-pill confirmed">Confirmed</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay" id="edit-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Edit Profile</h2>
+        <button class="close-btn" id="close-modal-btn">&times;</button>
+      </div>
+      <form id="edit-profile-form">
+        <div class="form-group">
+          <label>Full Name</label>
+          <input type="text" id="input-name" value="Aarav Sharma" required />
+        </div>
+        <div class="form-group">
+          <label>Role / Specialization</label>
+          <input type="text" id="input-role" value="Full Stack Developer" required />
+        </div>
+        <div class="form-group">
+          <label>College / University</label>
+          <input type="text" id="input-college" value="KIIT University" required />
+        </div>
+        <div class="form-group">
+          <label>Bio</label>
+          <textarea id="input-bio" rows="3">Building scalable web applications and experimenting with AI agents. Ready to win hackathons.</textarea>
+        </div>
+        <div class="form-group">
+          <label>Skills (comma-separated)</label>
+          <input type="text" id="input-skills" value="Node.js, React, MongoDB, Go" />
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="cancel-btn" id="cancel-modal-btn">Cancel</button>
+          <button type="submit" class="save-btn">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+  <script src="./js/dashBoard.js"></script>
+</body>
+</html>

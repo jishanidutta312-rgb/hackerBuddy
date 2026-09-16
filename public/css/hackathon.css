@@ -5,13 +5,11 @@
   box-sizing: border-box;
 }
 
-/* Neutralize global div margins for the page contents */
 .hackathons-page div,
 .hackathons-page section {
   margin-left: 0 !important;
 }
 
-/* Header & Filter Controls */
 .hackathons-page .hackathon-header {
   text-align: center;
   margin-bottom: 50px;
@@ -67,7 +65,6 @@
   color: #ffffff;
 }
 
-/* Cards Grid */
 .hackathons-page .hackathon-grid {
   display: grid !important;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;

@@ -28,6 +28,13 @@ app.get("/hackathons", (req, res) => {
 app.get("/about", (req, res) => {
     res.sendFile(path.join(__dirname, "../public/about.html"));
 });
+app.get("/how_It_Works", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/how_It_Works.html"));
+});
+app.get("/dashboard", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/dashboard.html"));
+});
+
 app.listen(port,() => {
     console.log(`Server running at port ${port}`);
 });

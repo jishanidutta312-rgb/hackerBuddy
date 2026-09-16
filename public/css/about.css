@@ -1,4 +1,4 @@
-/* Fixed: added the leading dot */
+
 .about-section {
   width: 100%;
   min-height: calc(100vh - 100px);
@@ -21,7 +21,6 @@
   max-width: 900px;
 }
 
-/* Fixed: reduced from 80px to 13px */
 .sub-title {
   font-family: 'Inter', sans-serif;
   font-size: 50px;
@@ -48,7 +47,7 @@
   color: #a0a0b8;
 }
 
-/* 3 Cards Container */
+
 .about-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -92,7 +91,6 @@
   margin: 0;
 }
 
-/* --- Added: Stats / Values Section --- */
 .values-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -120,7 +118,6 @@
   margin: 0;
 }
 
-/* Responsive Breakpoint */
 @media (max-width: 900px) {
   .about-section {
     min-height: auto;
