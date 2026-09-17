@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/settings.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="settings-body">
+
+  <header class="auth-topbar">
+    <div class="topbar-left">
+      <button class="menu-toggle-btn" id="sidebar-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/dashboard" class="brand-link">
+        <h1><span class="purple">hacker</span>Buddy</h1>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="/dashboard" class="topbar-avatar">
+        <img id="nav-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <span class="online-indicator"></span>
+      </a>
+    </div>
+  </header>
+
+  
+  <aside class="side-drawer" id="side-drawer">
+    <div class="drawer-header">
+      <div class="drawer-user">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <div>
+          <h4>Aarav Sharma</h4>
+          <p>@aarav_dev</p>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/dashboard" class="drawer-link">
+        <span class="drawer-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="/explore#teams" class="drawer-link">
+        <span class="drawer-icon">🔍</span>
+        <span>Explore Teams</span>
+      </a>
+      <a href="/teams" class="drawer-link">
+        <span class="drawer-icon">👥</span>
+        <span>My Teams</span>
+      </a>
+      <a href="/messages" class="drawer-link">
+        <span class="drawer-icon">💬</span>
+        <span>Messages</span>
+        <span class="badge-count">2</span>
+      </a>
+      <a href="/hackathons" class="drawer-link">
+        <span class="drawer-icon">🏆</span>
+        <span>Hackathons</span>
+      </a>
+      <a href="/saved" class="drawer-link">
+        <span class="drawer-icon">🔖</span>
+        <span>Saved</span>
+      </a>
+      <a href="/dashboard#profile" class="drawer-link">
+        <span class="drawer-icon">👤</span>
+        <span>Profile</span>
+      </a>
+      <a href="/settings" class="drawer-link active">
+        <span class="drawer-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="/" class="logout-link">
+        <span class="drawer-icon">🚪</span>
+        <span>Log Out</span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <main class="settings-page">
+    <div class="settings-header">
+      <h1>Settings</h1>
+      <p class="sub-text">Manage your account preferences, hackathon discovery status, and security.</p>
+    </div>
+
+    <div class="settings-container">
+      <aside class="settings-sidebar">
+        <a href="#account" class="tab-link active">Account & Identity</a>
+        <a href="#matching-form" class="tab-link">Team Discovery</a>
+        <a href="#notifications" class="tab-link">Notifications</a>
+        <a href="#danger" class="tab-link danger">Danger Zone</a>
+      </aside>
+
+      <section class="settings-content">
+        <form class="settings-card" id="account-form">
+          <div class="card-header">
+            <h2>Account Details</h2>
+            <p>Update your personal and contact credentials.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label>Full Name</label>
+              <input type="text" value="Aarav Sharma" required />
+            </div>
+            <div class="input-group">
+              <label>Username</label>
+              <input type="text" value="aarav_dev" required />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label>Email Address</label>
+            <input type="email" value="aarav@kiit.ac.in" required />
+          </div>
+
+          <div class="form-row">
+            <div class="input-group">
+              <label>GitHub Profile</label>
+              <input type="url" value="https://github.com/aarav-dev" placeholder="https://github.com/username" />
+            </div>
+            <div class="input-group">
+              <label>Discord Handle</label>
+              <input type="text" value="aarav#2048" placeholder="username#0000" />
+            </div>
+          </div>
+
+          <div class="btn-right">
+            <button type="submit" class="save-settings-btn">Update Account</button>
+          </div>
+        </form>
+
+        <form class="settings-card" id="matching-form">
+          <div class="card-header">
+            <h2>Matching & Discovery</h2>
+            <p>Control whether team leads can invite you to open squads.</p>
+          </div>
+
+          <div class="switch-row">
+            <div>
+              <h4>Open to Hackathon Invites</h4>
+              <p>Show the "Available for Teams" badge on your public card.</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="switch-row">
+            <div>
+              <h4>Timezone Auto-Sync</h4>
+              <p>Only match with squads operating within ±3 hours of IST.</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="input-group" style="margin-top: 14px;">
+            <label>Preferred Hackathon Formats</label>
+            <select class="settings-select">
+              <option value="both">Both Hybrid & Virtual</option>
+              <option value="in-person">In-Person Only</option>
+              <option value="virtual">Virtual Only</option>
+            </select>
+          </div>
+
+          <div class="btn-right">
+            <button type="submit" class="save-settings-btn">Save Preferences</button>
+          </div>
+        </form>
+
+
+        <div class="settings-card" id="notifications">
+          <div class="card-header">
+            <h2>Email Notifications</h2>
+            <p>Decide what updates get delivered to your inbox.</p>
+          </div>
+
+          <div class="switch-row">
+            <div>
+              <h4>Team Invitations</h4>
+              <p>Receive an email when a project squad invites you to join.</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" checked />
+              <span class="slider"></span>
+            </label>
+          </div>
+
+          <div class="switch-row">
+            <div>
+              <h4>Upcoming Hackathon Deadlines</h4>
+              <p>Alerts 48 hours before registration closes on your saved events.</p>
+            </div>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+
+        <div class="settings-card danger-card" id="danger">
+          <div class="card-header">
+            <h2>Danger Zone</h2>
+            <p>Irreversible actions related to your hackerBuddy account.</p>
+          </div>
+
+          <div class="danger-row">
+            <div>
+              <h4>Deactivate Account</h4>
+              <p>Remove your card from the explore pool and forfeit pending team requests.</p>
+            </div>
+            <button type="button" class="btn-danger">Deactivate</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="./js/settings.js"></script>
+</body>
+</html>

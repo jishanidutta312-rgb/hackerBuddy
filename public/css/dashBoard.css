@@ -684,3 +684,53 @@ body.dashboard-body {
     width: 100%;
   }
 }
+/* Lock drawer bounds and clip any spillover */
+.side-drawer {
+  overflow: hidden !important;
+  box-sizing: border-box !important;
+}
+
+/* Force flexbox inside header and strip any rogue margins */
+.drawer-header {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  box-sizing: border-box !important;
+  padding: 16px 18px !important;
+  margin: 0 !important;
+}
+
+.drawer-user {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  gap: 12px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  max-width: 200px !important;
+}
+
+/* Reset any global div, heading, or paragraph offsets */
+.drawer-user div,
+.drawer-user h4,
+.drawer-user p {
+  margin: 0 !important;
+  padding: 0 !important;
+  position: static !important;
+  transform: none !important;
+}
+
+.drawer-user img {
+  width: 42px !important;
+  height: 42px !important;
+  flex-shrink: 0 !important;
+  margin: 0 !important;
+}
+
+.drawer-close {
+  position: static !important;
+  margin: 0 0 0 auto !important;
+  padding: 4px !important;
+}

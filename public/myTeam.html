@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Teams - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/myTeam.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="teams-body">
+
+  
+  <header class="auth-topbar">
+    <div class="topbar-left">
+      <button class="menu-toggle-btn" id="sidebar-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/dashboard" class="brand-link">
+        <h1><span class="purple">hacker</span>Buddy</h1>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="/dashboard" class="topbar-avatar">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <span class="online-indicator"></span>
+      </a>
+    </div>
+  </header>
+
+  
+  <aside class="side-drawer" id="side-drawer">
+    <div class="drawer-header">
+      <div class="drawer-user">
+        <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Avatar" />
+        <div>
+          <h4>Aarav Sharma</h4>
+          <p>@aarav_dev</p>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/dashboard" class="drawer-link">
+        <span class="drawer-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="/explore#teams" class="drawer-link">
+        <span class="drawer-icon">🔍</span>
+        <span>Explore Teams</span>
+      </a>
+      <a href="/teams" class="drawer-link active">
+        <span class="drawer-icon">👥</span>
+        <span>My Teams</span>
+      </a>
+      <a href="/messages" class="drawer-link">
+        <span class="drawer-icon">💬</span>
+        <span>Messages</span>
+        <span class="badge-count">2</span>
+      </a>
+      <a href="/hackathons" class="drawer-link">
+        <span class="drawer-icon">🏆</span>
+        <span>Hackathons</span>
+      </a>
+      <a href="/saved" class="drawer-link">
+        <span class="drawer-icon">🔖</span>
+        <span>Saved</span>
+      </a>
+      <a href="/dashboard#profile" class="drawer-link">
+        <span class="drawer-icon">👤</span>
+        <span>Profile</span>
+      </a>
+      <a href="/settings" class="drawer-link">
+        <span class="drawer-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="/" class="logout-link">
+        <span class="drawer-icon">🚪</span>
+        <span>Log Out</span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+ 
+  <main class="teams-page">
+    <div class="teams-header-wrap">
+      <div>
+        <h1>My Teams</h1>
+        <p class="sub-desc">Manage your active squads, project repos, and team member rosters.</p>
+      </div>
+      <button class="btn-create-team" id="open-team-modal">+ Create New Team</button>
+    </div>
+
+    <div class="teams-stack">
+     
+      <article class="team-card">
+        <div class="team-card-top">
+          <div>
+            <div class="team-title-row">
+              <h2>NeuroTrace</h2>
+              <span class="badge-active">Active Sprint</span>
+            </div>
+            <p class="target-event">Targeting: <strong>HackOdisha 2026</strong> • AI Healthcare Diagnostic Assistant</p>
+          </div>
+          <div class="repo-links">
+            <a href="https://github.com" target="_blank" class="repo-btn">GitHub Repo ↗</a>
+          </div>
+        </div>
+
+        <div class="team-roster">
+          <span class="roster-title">ROSTER (3/4 MEMBERS)</span>
+          <div class="member-grid">
+            
+            <div class="member-pill">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Aarav" />
+              <div>
+                <strong>Aarav Sharma</strong>
+                <span>Lead • Full Stack</span>
+              </div>
+            </div>
+
+            
+            <div class="member-pill">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Priya" alt="Priya" />
+              <div>
+                <strong>Priya Patel</strong>
+                <span>ML / Python</span>
+              </div>
+            </div>
+
+            
+            <div class="member-pill">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Rohan" alt="Rohan" />
+              <div>
+                <strong>Rohan Verma</strong>
+                <span>UI/UX Designer</span>
+              </div>
+            </div>
+
+          
+            <div class="member-pill empty-slot">
+              <span class="add-icon">+</span>
+              <div>
+                <strong>Open Slot</strong>
+                <span>Backend / DevOps</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="team-card">
+        <div class="team-card-top">
+          <div>
+            <div class="team-title-row">
+              <h2>ChainVote</h2>
+              <span class="badge-forming">Forming</span>
+            </div>
+            <p class="target-event">Targeting: <strong>EthIndia 2026</strong> • Decentralized Governance Protocol</p>
+          </div>
+          <div class="repo-links">
+            <a href="https://github.com" target="_blank" class="repo-btn">GitHub Repo ↗</a>
+          </div>
+        </div>
+
+        <div class="team-roster">
+          <span class="roster-title">ROSTER (2/4 MEMBERS)</span>
+          <div class="member-grid">
+           
+            <div class="member-pill">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Neha" alt="Neha" />
+              <div>
+                <strong>Neha Gupta</strong>
+                <span>Smart Contract Lead</span>
+              </div>
+            </div>
+
+           
+            <div class="member-pill">
+              <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Aarav" alt="Aarav" />
+              <div>
+                <strong>Aarav Sharma</strong>
+                <span>Frontend Integration</span>
+              </div>
+            </div>
+
+           
+            <div class="member-pill empty-slot">
+              <span class="add-icon">+</span>
+              <div>
+                <strong>Open Slot</strong>
+                <span>Rust / Solidity</span>
+              </div>
+            </div>
+
+           
+            <div class="member-pill empty-slot">
+              <span class="add-icon">+</span>
+              <div>
+                <strong>Open Slot</strong>
+                <span>UI Designer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  
+  <div class="modal-overlay" id="team-modal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2>Create a Squad</h2>
+        <button class="close-btn" id="close-team-modal">&times;</button>
+      </div>
+      <form id="create-team-form">
+        <div class="form-group">
+          <label>Squad Name</label>
+          <input type="text" placeholder="e.g. ByteCraft" required />
+        </div>
+        <div class="form-group">
+          <label>Target Hackathon</label>
+          <input type="text" placeholder="e.g. HackOdisha 2026" required />
+        </div>
+        <div class="form-group">
+          <label>Project Pitch / Concept</label>
+          <textarea rows="3" placeholder="Brief summary of what you are planning to build..."></textarea>
+        </div>
+        <div class="form-group">
+          <label>Roles Needed</label>
+          <input type="text" placeholder="e.g. Frontend Dev, UI/UX Designer" />
+        </div>
+        <div class="modal-actions">
+          <button type="button" class="cancel-btn" id="cancel-team-modal">Cancel</button>
+          <button type="submit" class="submit-team-btn">Publish Team</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="./js/myTeam.js"></script>
+</body>
+</html>
