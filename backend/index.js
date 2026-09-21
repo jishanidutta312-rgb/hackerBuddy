@@ -40,6 +40,25 @@ app.get("/settings", (req, res) => {
 app.get("/myTeam", (req, res) => {
   res.sendFile(path.join(__dirname, "../public/myTeam.html"));
 });
+app.get("/create_team", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/create_team.html"));
+});
+app.get("/messages", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/messages.html"));
+});
+
+
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+app.get("/signup", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public/signup.html"));
+});
+
+app.post("/signup", (req, res) => {
+  console.log(req.body); 
+  res.redirect("/dashboard");
+});
 app.listen(port,() => {
     console.log(`Server running at port ${port}`);
 });
