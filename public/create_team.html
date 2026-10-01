@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Squad - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/create_team.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="create-team-body">
+
+  
+  <header class="auth-topbar">
+    <div class="topbar-left">
+      <a href="/dashboard" class="brand-link">
+        <h1><span class="purple">hacker</span>Buddy</h1>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="/dashboard" class="topbar-avatar">
+        <img id="nav-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Builder" alt="Avatar" />
+        <span class="online-indicator"></span>
+      </a>
+    </div>
+  </header>
+
+  <main class="create-team-page">
+    <div class="page-header">
+      <span class="header-badge">SQUAD BUILDER</span>
+      <h1>Assemble Your Squad</h1>
+      <p>Define your project vision, target hackathons, and recruit teammates with the exact skills you need.</p>
+    </div>
+
+    <form class="team-builder-card" id="create-team-form">
+    
+      <div class="form-section">
+        <h3>1. Squad Identity</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="team-name">Team / Squad Name</label>
+            <input type="text" id="team-name" placeholder="e.g. ByteCraft, NeuralSync" required />
+          </div>
+          <div class="form-group">
+            <label for="target-event">Target Hackathon</label>
+            <select id="target-event" class="form-select" required>
+              <option value="" disabled selected>Select an upcoming event</option>
+              <option value="HackOdisha 2026">HackOdisha 2026 (Hybrid)</option>
+              <option value="EthIndia 2026">EthIndia 2026 (In-Person)</option>
+              <option value="Global AI Sprint">Global AI Sprint (Online)</option>
+              <option value="Independent / Other">Other / Open Source</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="project-pitch">Project Concept & Vision</label>
+          <textarea id="project-pitch" rows="3" placeholder="Briefly explain what problem you want to solve, tech stack ideas, and what you aim to build..." required></textarea>
+        </div>
+      </div>
+
+      
+      <div class="form-section">
+        <h3>2. Open Recruitment Slots</h3>
+        <p class="section-subtext">Pick the roles you need in your squad so available builders can apply.</p>
+
+        <div class="roles-checklist">
+          <label class="role-chip">
+            <input type="checkbox" value="Frontend Dev" />
+            <span>Frontend Dev</span>
+          </label>
+          <label class="role-chip">
+            <input type="checkbox" value="Backend & Cloud" />
+            <span>Backend & Cloud</span>
+          </label>
+          <label class="role-chip">
+            <input type="checkbox" value="AI / ML Engineer" />
+            <span>AI / ML Engineer</span>
+          </label>
+          <label class="role-chip">
+            <input type="checkbox" value="UI/UX Designer" />
+            <span>UI/UX Designer</span>
+          </label>
+          <label class="role-chip">
+            <input type="checkbox" value="Smart Contract Dev" />
+            <span>Smart Contract Dev</span>
+          </label>
+          <label class="role-chip">
+            <input type="checkbox" value="DevOps / Infra" />
+            <span>DevOps</span>
+          </label>
+        </div>
+
+        <div class="form-group" style="margin-top: 18px;">
+          <label for="max-members">Maximum Team Capacity</label>
+          <select id="max-members" class="form-select">
+            <option value="2">2 Members</option>
+            <option value="3">3 Members</option>
+            <option value="4" selected>4 Members (Recommended)</option>
+            <option value="5">5 Members</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <h3>3. Collaboration Links (Optional)</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="repo-url">GitHub / GitLab Repo</label>
+            <input type="url" id="repo-url" placeholder="https://github.com/your-repo" />
+          </div>
+          <div class="form-group">
+            <label for="discord-url">Discord / Slack Room</label>
+            <input type="text" id="discord-url" placeholder="discord.gg/yourteam" />
+          </div>
+        </div>
+      </div>
+
+    
+      <div class="actions-container">
+        <button type="submit" class="btn-publish-team" id="publish-btn">Publish Team Squad</button>
+        <span class="or-divider">or explore existing groups</span>
+        <a href="/explore" class="btn-find-teams">Find Teams →</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="./js/create_team.js"></script>
+</body>
+</html>

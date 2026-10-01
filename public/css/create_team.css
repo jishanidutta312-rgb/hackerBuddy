@@ -1,0 +1,275 @@
+* {
+  box-sizing: border-box;
+}
+
+body.create-team-body {
+  margin: 0;
+  padding: 0;
+  background-color: #050814;
+  color: #ffffff;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+/* ---------------- TOPBAR ---------------- */
+.auth-topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 36px;
+  background-color: #080d1f;
+  border-bottom: 1.5px solid rgb(52, 0, 92);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.brand-link {
+  text-decoration: none;
+}
+
+.brand-link h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.brand-link .purple {
+  color: blueviolet;
+}
+
+.topbar-avatar {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid blueviolet;
+  display: block;
+}
+
+.topbar-avatar img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.online-indicator {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #2ecc71;
+  border: 2px solid #080d1f;
+  border-radius: 50%;
+}
+
+/* ---------------- PAGE WRAPPER ---------------- */
+.create-team-page {
+  max-width: 820px;
+  margin: 40px auto 100px auto;
+  padding: 0 24px;
+}
+
+.page-header {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.header-badge {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: blueviolet;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.page-header h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  margin: 0 0 8px 0;
+}
+
+.page-header p {
+  font-size: 14px;
+  color: #a0a0b8;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ---------------- TEAM BUILDER CARD ---------------- */
+.team-builder-card {
+  background: #080d1f;
+  border: 1.5px solid rgb(52, 0, 92);
+  border-radius: 20px;
+  padding: 36px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.form-section {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 26px;
+  margin-bottom: 26px;
+}
+
+.form-section:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 32px;
+}
+
+.form-section h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  margin: 0 0 6px 0;
+  color: #ffffff;
+}
+
+.section-subtext {
+  font-size: 13px;
+  color: #8c8ca1;
+  margin: 0 0 16px 0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a0a0b8;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-select {
+  width: 100%;
+  background: #0f162e;
+  border: 1px solid rgb(52, 0, 92);
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: #ffffff;
+  font-size: 13.5px;
+  outline: none;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-select:focus {
+  border-color: blueviolet;
+}
+
+/* ---------------- ROLE CHIPS SELECTION ---------------- */
+.roles-checklist {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.role-chip {
+  cursor: pointer;
+  user-select: none;
+}
+
+.role-chip input {
+  display: none;
+}
+
+.role-chip span {
+  display: inline-block;
+  padding: 8px 16px;
+  background: #0f162e;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  font-size: 13px;
+  color: #b5b5c7;
+  transition: all 0.2s ease;
+}
+
+.role-chip input:checked + span {
+  background: rgba(138, 43, 226, 0.2);
+  border-color: blueviolet;
+  color: #d8b4fe;
+  font-weight: 600;
+}
+
+/* ---------------- ACTIONS & FIND TEAMS BUTTON ---------------- */
+.actions-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.btn-publish-team {
+  background: blueviolet;
+  border: none;
+  color: #ffffff;
+  padding: 13px 26px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.btn-publish-team:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.or-divider {
+  font-size: 12px;
+  color: #6b6b80;
+}
+
+.btn-find-teams {
+  background: transparent;
+  border: 1.5px solid blueviolet;
+  color: #d8b4fe;
+  padding: 11px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.btn-find-teams:hover {
+  background: blueviolet;
+  color: #ffffff;
+}
+
+@media (max-width: 650px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+  .actions-container {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .btn-find-teams {
+    justify-content: center;
+  }
+}

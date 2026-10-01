@@ -6,14 +6,39 @@
     <title>Sign up page</title>
     <link rel="stylesheet" href="./css/styles.css"/>
 </head>
+<script>
+  document.getElementById("signup-form").addEventListener("submit", function (e) {
+    const usernameInput = document.getElementById("username") || document.querySelector('input[name="username"]');
+    const enteredName = usernameInput && usernameInput.value.trim() ? usernameInput.value.trim() : "Builder";
+
+   
+    localStorage.removeItem("hackerBuddyUser");
+
+   
+    const freshUser = {
+      name: enteredName,
+      role: "",
+      college: "",
+      bio: "",
+      skills: [],
+      participations: 0,
+      invitesCount: 0,
+      activeSquad: "No Active Squad"
+    };
+
+    localStorage.setItem("hackerBuddyUser", JSON.stringify(freshUser));
+  });
+</script>
 <body>
     <div class="container">
         <div class="form">
-            <h1>Create your 🚀<br/>hackerBuddy account.</h1> 
-            <input type="name" placeholder="Full Name"/>
-            <input type="email" pattern=".+@example\.com"  placeholder="Email"/>
-            <input type="password" placeholder="Password"/>
-            <button class="btn">Sign Up</button>
+            <h1>Create your 🚀<br/>hackerBuddy account.</h1>
+            <form id="signup-form" action="/signup" method="POST">
+                <input type="text" id="username" name="username" placeholder="Username" required />
+                <input type="email" name="email" minlength="6" placeholder="Email"required/>
+                <input type="password" name="password" placeholder="Password"required/>
+                <button type="submit" class="btn">Sign Up</button>
+            </form> 
             <div class="para">
                 <hr/>
                 <p>or continue with</p>

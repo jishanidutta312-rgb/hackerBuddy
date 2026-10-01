@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Messages - hackerBuddy</title>
+  <link rel="stylesheet" href="./css/messages.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+</head>
+<body class="messages-body">
+
+  <header class="auth-topbar">
+    <div class="topbar-left">
+      <button class="menu-toggle-btn" id="sidebar-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="/dashboard" class="brand-link">
+        <h1><span class="purple">hacker</span>Buddy</h1>
+      </a>
+    </div>
+    <div class="topbar-right">
+      <a href="/dashboard" class="topbar-avatar">
+        <img id="nav-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Builder" alt="Avatar" />
+        <span class="online-indicator"></span>
+      </a>
+    </div>
+  </header>
+
+  <aside class="side-drawer" id="side-drawer">
+    <div class="drawer-header">
+      <div class="drawer-user">
+        <img id="drawer-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Builder" alt="Avatar" />
+        <div>
+          <h4 id="drawer-user-name">Builder</h4>
+          <p id="drawer-user-tag">@builder</p>
+        </div>
+      </div>
+      <button class="drawer-close" id="drawer-close-btn">&times;</button>
+    </div>
+
+    <nav class="drawer-nav">
+      <a href="/dashboard" class="drawer-link">
+        <span class="drawer-icon">📊</span>
+        <span>Dashboard</span>
+      </a>
+      <a href="/explore#teams" class="drawer-link">
+        <span class="drawer-icon">🔍</span>
+        <span>Explore Teams</span>
+      </a>
+      <a href="/teams" class="drawer-link">
+        <span class="drawer-icon">👥</span>
+        <span>My Teams</span>
+      </a>
+      <a href="/messages" class="drawer-link active">
+        <span class="drawer-icon">💬</span>
+        <span>Messages</span>
+        <span class="badge-count">2</span>
+      </a>
+      <a href="/hackathons" class="drawer-link">
+        <span class="drawer-icon">🏆</span>
+        <span>Hackathons</span>
+      </a>
+      <a href="/saved" class="drawer-link">
+        <span class="drawer-icon">🔖</span>
+        <span>Saved</span>
+      </a>
+      <a href="/dashboard#profile" class="drawer-link">
+        <span class="drawer-icon">👤</span>
+        <span>Profile</span>
+      </a>
+      <a href="/settings" class="drawer-link">
+        <span class="drawer-icon">⚙️</span>
+        <span>Settings</span>
+      </a>
+    </nav>
+
+    <div class="drawer-footer">
+      <a href="/" class="logout-link">
+        <span class="drawer-icon">🚪</span>
+        <span>Log Out</span>
+      </a>
+    </div>
+  </aside>
+
+  <div class="drawer-backdrop" id="drawer-backdrop"></div>
+
+  <main class="chat-workspace">
+    <aside class="chat-sidebar">
+      <div class="chat-sidebar-header">
+        <h2>Chats</h2>
+        <span class="status-indicator-count">2 Active</span>
+      </div>
+
+      <div class="chat-section-label">TEAM CHANNELS</div>
+      <div class="chat-list" id="squad-channels">
+        <div class="chat-item active" data-chat-id="neurotrace">
+          <div class="chat-icon squad-icon">⚡</div>
+          <div class="chat-info">
+            <div class="chat-title-row">
+              <h4>NeuroTrace</h4>
+              <span class="chat-time">12:04 AM</span>
+            </div>
+            <p class="chat-preview">Rohan: The UI wireframes are done</p>
+          </div>
+        </div>
+
+        <div class="chat-item" data-chat-id="chainvote">
+          <div class="chat-icon squad-icon">🔗</div>
+          <div class="chat-info">
+            <div class="chat-title-row">
+              <h4>ChainVote</h4>
+              <span class="chat-time">Yesterday</span>
+            </div>
+            <p class="chat-preview">Neha: Smart contract deployed</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-section-label" style="margin-top: 18px;">DIRECT MESSAGES</div>
+      <div class="chat-list" id="dm-channels">
+        <div class="chat-item" data-chat-id="priya">
+          <div class="chat-avatar-wrap">
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Priya" alt="Priya" />
+            <span class="online-dot"></span>
+          </div>
+          <div class="chat-info">
+            <div class="chat-title-row">
+              <h4>Priya Patel</h4>
+              <span class="chat-time">11:50 PM</span>
+            </div>
+            <p class="chat-preview">Sent the PyTorch weights link</p>
+          </div>
+        </div>
+
+        <div class="chat-item" data-chat-id="rohan">
+          <div class="chat-avatar-wrap">
+            <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Rohan" alt="Rohan" />
+          </div>
+          <div class="chat-info">
+            <div class="chat-title-row">
+              <h4>Rohan Verma</h4>
+              <span class="chat-time">Sep 20</span>
+            </div>
+            <p class="chat-preview">Let's connect after the round</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="chat-main">
+      <div class="chat-header">
+        <div class="active-partner-info">
+          <div class="partner-avatar" id="current-chat-icon">⚡</div>
+          <div>
+            <h3 id="current-chat-title">NeuroTrace</h3>
+            <p id="current-chat-desc">3 members • HackOdisha 2026 Sprint</p>
+          </div>
+        </div>
+        <div class="chat-header-actions">
+          <a href="/teams" class="btn-chat-view-team">View Squad →</a>
+        </div>
+      </div>
+
+      <div class="chat-messages-container" id="chat-stream">
+        <div class="message-group incoming">
+          <img class="msg-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Priya" alt="Priya" />
+          <div class="msg-bubble-wrap">
+            <div class="msg-author">Priya Patel <span class="msg-timestamp">11:58 PM</span></div>
+            <div class="msg-text">Hey team! The vision diagnostic model training hit 94% accuracy on our local test data.</div>
+          </div>
+        </div>
+
+        <div class="message-group incoming">
+          <img class="msg-avatar" src="https://api.dicebear.com/7.x/bottts/svg?seed=Rohan" alt="Rohan" />
+          <div class="msg-bubble-wrap">
+            <div class="msg-author">Rohan Verma <span class="msg-timestamp">12:04 AM</span></div>
+            <div class="msg-text">The UI wireframes are done. Aarav, can we hook up the prediction API endpoint next?</div>
+          </div>
+        </div>
+      </div>
+
+      <form class="chat-composer" id="composer-form">
+        <input 
+          type="text" 
+          id="message-input" 
+          placeholder="Message #NeuroTrace... (press Enter to send)" 
+          autocomplete="off" 
+          required 
+        />
+        <button type="submit" class="btn-send-message" aria-label="Send Message">
+          <span>➤</span>
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <script src="./js/messages.js"></script>
+</body>
+</html>
